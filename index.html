@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cooperativa de Ahorro y Crédito</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Logo Cooperativa" />
+            <img src="images/Imagen1.png" alt="Logo Cooperativa" />
         </div>
         <nav>
             <ul>
@@ -38,18 +39,20 @@
     </section>
 
     <section id="servicios" class="servicios">
-        <h2>Servicios</h2>
         <div class="servicio">
-            <h3>Ahorro</h3>
-            <p>Ofrecemos diversas opciones de ahorro con rendimientos competitivos.</p>
+            <h3>Cuenta de Ahorro</h3>
+            <p>Descripción breve del servicio 1.</p>
+            <img src="ruta/a/tu-imagen1.jpg" alt="Descripción del Servicio 1" class="servicio-imagen">
         </div>
         <div class="servicio">
-            <h3>Créditos</h3>
-            <p>Préstamos personales y para pequeños negocios con condiciones favorables.</p>
+            <h3>Préstamos a bajo interés</h3>
+            <p>Descripción breve del servicio 2.</p>
+            <img src="ruta/a/tu-imagen2.jpg" alt="Descripción del Servicio 2" class="servicio-imagen">
         </div>
         <div class="servicio">
-            <h3>Inversiones</h3>
-            <p>Oportunidades de inversión seguras y rentables.</p>
+            <h3>Servicio 3</h3>
+            <p>Descripción breve del servicio 3.</p>
+            <img src="ruta/a/tu-imagen3.jpg" alt="Descripción del Servicio 3" class="servicio-imagen">
         </div>
     </section>
 
@@ -65,12 +68,41 @@
             <label for="mensaje">Mensaje:</label>
             <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-            <button type="submit">Enviar</button>
+            <button type="submit" class="button">Enviar</button>
         </form>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Cooperativa de Ahorro y Crédito. Todos los derechos reservados.</p>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/Imagen1.png" alt="Logo Cooperativa" />
+            </div>
+            <div class="footer-links">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Suscríbete a Nuestro Boletín</h3>
+                <form>
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Cooperativa de Ahorro y Crédito. Todos los derechos reservados.</p>
+        </div>
     </footer>
 </body>
 
