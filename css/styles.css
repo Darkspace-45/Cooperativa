@@ -1,0 +1,249 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004d99;
+    padding: 20px;
+}
+
+header .logo img {
+    width: 100px;
+    transition: transform 0.3s ease-in-out;
+}
+
+header .logo img:hover {
+    transform: scale(1.1);
+    /* Efecto hover para el logo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    padding: 5px 0;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 50%;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+    transform: translateY(-3px);
+    /* Efecto hover para el enlace */
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+/* Sección de banner */
+.banner {
+    background: #0066cc;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    animation: slideInFromLeft 1s ease-out;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    animation: slideInFromRight 1s ease-out;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Sección de nosotros */
+.nosotros {
+    padding: 40px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.nosotros h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.nosotros p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Sección de servicios */
+.servicios {
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.servicio {
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.servicio:hover {
+    transform: translateY(-10px);
+    /* Efecto hover para los servicios */
+}
+
+.servicio h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #004d99;
+}
+
+.servicio p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Sección de contacto */
+.contacto {
+    padding: 40px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.contacto h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.contacto form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contacto label {
+    display: block;
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.contacto label:hover {
+    color: #004d99;
+    /* Efecto hover para los labels */
+}
+
+.contacto input,
+.contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.contacto input:focus,
+.contacto textarea:focus {
+    border-color: #004d99;
+    outline: none;
+}
+
+.contacto button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #004d99;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contacto button:hover {
+    background-color: #003366;
+    transform: translateY(-3px);
+    /* Efecto hover para el botón */
+}
+
+/* Footer */
+footer {
+    background-color: #004d99;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    animation: fadeIn 1s ease-in-out;
+}
